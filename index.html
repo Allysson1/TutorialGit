@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial de Git</title>
+    <link rel="stylesheet" href="css/estilo.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1>Saiba agora tudo sobre o Git</h1>
+
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+
+        <ul class="menu2">
+            <li><a href="index.html#control">O que é controle de versão</a></li>
+            <li><a href="index.html#git">O que é o Git</a></li>
+            <li><a href="index.html#github">O que é GitHub</a></li>
+            <li><a href="index.html#gitlab">O que é GitLab</a></li>
+            <li><a href="index.html#pull">O que é Git Pull</a></li>
+            <li><a href="index.html#brach">O que são Branches</a></li>
+            <li><a href="index.html#explic">Como criar uma conta em um dos serviços</a></li>
+            <li><a href="index.html#facul">Colaborar em um projeto usando o Git</a></li>
+        </ul>
+        <a href="tutorial.html">Tutorial De Uso</a>
+        <a href="instala.html">Instalação e Configuração</a>
+
+        <ul class="menu2">
+            <li><a href="instala.html">Instalação no Windows</a></li>
+            
+            <!--<a href="instala.html">No Linux </a>-->
+            <li><a href="instala.html#config">Configuração do Git</a></li>         
+        </ul>
+        <a href="comandos.html">Principais comandos do Git</a>
+        <a href="arrumar.html">Como arrumar uma mensagem errada no commit</a>
+        <a href="referencias.html">Todas as referências usadas para desenvolver o tutorial</a>
+
+    </nav>
+
+    <article class="corpo">
+
+        <p id="control"></p>
+        <h2 class="title">O que é controle de versão</h2>
+        
+        <p>
+            O controle de versão é um sistema onde você pode controlar os arquivos e projetos, podendo ser visto todas as atualizações feitas e solucionando problemas encontrados nos arquivos. É conhecido também como VCS
+        </p>
+        <h4>Sistemas Locais de Controle de Versão (VCSs)</h4>
+        <p> É um banco de dados simples criado para manter todas as alterações dos arquivos e evitar possíveis erros e facilitar as revisões.
+            Uma ferramenta dele é o RCS que funciona mantendo um conjunto de alterações em um formato especial no disco, podendo recriar o arquivo adicionando todas as alterações.
+        </p>
+        <h4>Sistemas Centralizados de controle de versão (CVCSs)</h4>
+        <p> Possui um único servidor com todos os arquivos de controle de versão e controla as pessoas que colaboram para desenvolver em outros sistemas tendo uma quantidade certa de pessoas e o que cada um faz, tendo isso como vantagens.
+            A desvantagem é que se esse servidor der um problema, dependendo da quantidade de horas, ninguém poderá utilizá-lo com colaboração ou salvar as alterações de versão. Se o disco rígido for corrompido e não tiver sido feito um backup perderá toda história seu projeto.
+        </p>
+        <h4>Sistemas Distribuídos de controle de versão (DVCS)</h4>
+        <p> Através dele os clientes têm acesso a um estado recente do arquivo, podendo duplicar localmente o repositório completo e assim, se o servidor morrer e esse sistema estiver sendo usado para colaboração, qualquer um dos repositórios pode ser copiado de volta para o servidor, funcionando como um backup do arquivo
+            Ele funciona também muito bem para colaborar em diferentes grupos de pessoas de maneiras diferentes ao mesmo tempo dentro do mesmo projeto.
+        </p>
+        <p id="git"></p>
+        <h2 class="title">O que é Git</h2>
+        <img src="images/2.2.png" alt="Logo do Git com símbolo laranja representando uma Branch e o nome Git ao lado." class="logo">
+        <p>
+
+            o Git é um sistema de controle de versão distribuído(DVCS) de código aberto desenvolvido por Linus Torvalds no ano de 2005. O sistema é um dos mais utlizado no mundo pelos desenvolvedores de software. Pois possibilita que uma equipe por exemplo de desenvolvedores possa trabalhar junta em único projeto, tornado o trabalho mais eficiente e mais rápido, e o Git mantem tudo em ordem.
+        </p>
+
+        <p id="github"></p>
+        <h2 class="title">O que é GitHub</h2>
+        <img src="images/4.1.png" alt="Logo do GitHub com um mascote meio Gato e meio Pouvo preto com o nome GitHub ao lado." class="logo">
+        <p>
+            O GitHub é um sistema web para hospedar o código- fonte e os arquivos de um projeto usando um dos principais controladores de versão do mundo, o Git. Contribui amplamente no desenvolvimento de novos Frameworks e sistemas open-source ou privados. Pois existe uma comunidade enorme de Desenvolvedores ao redor do mundo que fazem essa roda girar. Possibilita também a criação de portfólios para os programadores divulgarem os seus trabalhos. São mais de 100 milhões de projetos que estão abrigados no GitHub, empresas gigantes do mundo da tecnologia utilizam o GitHub, por exemplo Google e Microsoft.
+
+
+        <p id="gitlab"></p>
+        <h2 class="title">O que é GitLab</h2>
+        <img src="images/3.1.png" alt="logo do GitLab laranja e tons de vermelho semelhante a cabeça de uma raposa com o nome GitLab ao lado." class="logo">
+        <p>
+            O GitLab é basicamente um GitHub, sua principal diferença, é que o GitLab permite que os desenvolvedores armazenem seus projetos em seus próprios servidores, e não em um servidor de terceiros, podendo até em certos casos ter que pagar pela hospedagem dele nesses servidores paralelos.
+        </p>
+        
+        <p id="pull"></p>
+        <h2 class="title">O que é Git Pull</h2>
+        <p>
+            O comando git pull é usado para obter atualizações do repositório remoto.</p>
+        <p>Git pull é a combinação de dois comandos, Git fetch e o git merge. No git fetch, ele basicamente vai atras das últimas atualizações do repositório, e o git merge, pega essas informações e insere dentro da branch local (pc do usuário que executou o comando), assim o arquivo pode ser manipulado com as últimas alterações.
+
+        </p>
+
+        <p id="brach"></p>
+        <h2 class="title">O que são Branches</h2>
+        <p>
+            Em tradução livre, Banches significa raízes, e essas raízes, são as copias de repositórios criadas para que cada desenvolvedor possa fazer suas alterações sem interferir em outros trabalhos sendo executados por outros desenvolvedores.
+        </p>
+        <p>
+            Branches são separações de código, normalmente são utilizados para separar alterações grandes ou novas funcionalidades do projeto, por exemplo: Existe um projeto de blog, os desenvolvedores já fizeram quase toda a parte do blog, mas existem alterações para fazer no sistema de usuários do blog e algumas a fazer no sistema de posts do blog. Para isso, cria se uma branch "usuarios" e uma "posts" (ou algo do tipo) e fazem-se as alterações nessas branches, um time trabalha em cada uma dessas branches, enquanto isso, outro time continua trabalhando em pequenas mudanças ou bugfixes na branch master.
+        </p>
+
+
+        <p id="explic"></p>
+        <h2 class="title">Explicação de como criar uma conta em um dos serviços</h2>
+        <p>
+            Este é o método para criar uma conta no GIT.</p>
+        <p>Escreva os comandos a seguir com suas informações:</p>
+        <p>Comandos abaixo devem ser inseridos no Git CMD.</p>
+        <p>git config --global user.name 1"Seu nome normal ou nick name" </p>
+        <p>git config --global user.email exemplo@seuemail.com.br</p>
+
+        <p>Para corrigir um erro de criação de conta, use o comando abaixo, ele apaga o nome ou email que você colocou errado. Usando user.name no final, você apaga o nome, usando user.email, você apaga o email, após isso é so repetir o processo acima e colocar corretamente. Lembre-se, é importante que tanto no git quanto no GitHub, o nome e o email sejam extamente iguais, caso contrário, erros acontecerão.</p>
+        <img src="images/apagaruseremail.png" alt="Imagem represnetando o código git config --global --unset user.name, que serve para apagar um usuário errado." class="cod">
+
+        <p>para ver se está tudo certo, use o comando a seguir para ver a lista de todas as configurações:
+            git config --list
+        </p>
+
+
+        <p id="facul"></p>
+        <h2 class="title">Explicação sobre como um grupo de faculdade pode usar o Git para colaborar em um projeto, como, não sei, talvez um Projeto Integrador.</h2>
+        <p>
+            Com o Git, todos teriam acesso ao arquivo ao mesmo tempo, sendo assim, não seria necessário ficar passando o arquivo compactado de um para o outro, empacando o grupo caso um demorasse a fazer sua parte, etc. Teríamos o controle de nossas alterações no decorrer do processo, além de reduzir a possibilidade da perda do arquivo.
+        </p>
+
+
+    </article>
+
+
+    <footer>
+        <p><small>&copy; Copyright - Todos os direitos reservados - Grupo A</small></p>
+    </footer>
+
+</body>
+
+</html>

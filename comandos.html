@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial de Git</title>
+    <link rel="stylesheet" href="css/estilo.css" type="text/css" />
+</head>
+
+<body>
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+
+        <ul class="menu2">
+            <li><a href="index.html#control">O que é controle de versão</a></li>
+            <li><a href="index.html#git">O que é o Git</a></li>
+            <li><a href="index.html#github">O que é GitHub</a></li>
+            <li><a href="index.html#gitlab">O que é GitLab</a></li>
+            <li><a href="index.html#pull">O que é Git Pull</a></li>
+            <li> <a href="index.html#brach">O que são Branches</a></li>
+            <li> <a href="index.html#explic">Como criar uma conta em um dos serviços</a></li>
+            <li><a href="index.html#facul">Colaborar em um projeto usando o Git</a></li>
+        </ul>
+        <a href="tutorial.html">Tutorial De Uso</a>
+        <a href="instala.html">Instalação e Configuração</a>
+
+        <ul class="menu2">
+            <li><a href="instala.html">Instalação no Windows</a></li>
+
+            <!--<a href="instala.html">No Linux </a>-->
+            <li><a href="instala.html#config">Configuração do Git</a></li>
+        </ul>
+        <a href="comandos.html">Principais comandos do Git</a>
+        <a href="arrumar.html">Como arrumar uma mensagem errada no commit</a>
+        <a href="referencias.html">Todas as referências usadas para desenvolver o tutorial</a>
+
+    </nav>
+
+    <article class="corpo">
+
+        <h2 class="title">Quais os principais comandos do Git?</h2>
+        <p>
+            Abaixo você verá os principais comandos para que você consiga utilizar o Git da maneira correta e com a maior facilidade possível.</p>
+
+        <p>Git Clone</p>
+        <p>O git clone é um comando para baixar código fonte de repositórios em servidores.</p>
+
+        <p>Git clone https://link</p>
+        <p><img src="images/gitclonegithub.png" alt="Imagem de Link para executar o comando git clone" class="cod"></p>
+        <p>Selecione o link do repositório que quem você deseja fazer o download para realizar alterações e execute o comando:</p>
+
+        <p><img src="images/gitcloneterminal.png" alt="Imagem de processo de como executar o comando git clone" class="cod"></p>
+        <p>Espere o download acabar, e procure não escolher link de alguém com muitos arquivos grandes, vai demorar muito (não seja como eu ☹)</p>
+
+        <p><img src="images/gitcloneresult.png" alt="Imagem de resultado do git clone " class="gci"></p>
+        <p class=" tlf">após isso o arquivo já estará em seu diretório pessoal como na imagem ao lado e poderá fazer as mudanças.</p>
+
+        <p class= gb>Git Branches</p>
+        <p>Comando utilizado para criar, listar e excluir branches.</p>
+        <p>Comando para criar: Comando para criar um branch local (no seu pc)</p>
+
+        <p>.Git branch "nome do branch"</p>
+        <p><img src="images/gitbranch.png" alt="Imagem de comando do git branch " class="cod"></p>
+
+        <p>Para criar uma branch no repositório remoto: execute o camando a seguir:</p>
+        <p>.git push -u remote "nome-da-branch""</p>
+        <p>Para ver as branches:</p>
+        <p>.git branch or git branch --list</p>
+        <p><img src="images/gitbranchlist.png" alt="Imagem de comando do git branch --list " class="cod"></p>
+
+        <p>Deletando uma branch:</p>
+        <p>.git branch -d "nome-da-branch"</p>
+        <p><img src="images/gitbranchdelete.png" alt="Imagem de comando do git branch -d" class="cod"></p>
+        <p>Git Checkout:</p>
+
+        <p>Este é um dos comandos Git mais usados. Para trabalhar em uma branch, primeiro você precisa mudar para ela.</p>
+        <p>Usamos o git checkout principalmente para alternar de um branch para outro. </p>
+        <p>git checkout "nome-da-branch"</p>
+        <p><img src="images/gitcheckoutbrach.png" alt="Imagem de comando do git checkout" class="cod"></p>
+
+        <p>Há também um comando de atalho que permite criar e trocar para um branch ao mesmo tempo:</p>
+        <p>git checkout -b "nome-da-branch"</p>
+        <p><img src="images/gitcheckoutcriarbranch.png" alt="Imagem de comando do git checkout para criar e mudar para outra Branch" class="cod"></p>
+
+        <p>Git Status:</p>
+        <p>O comando status do Git fornece todas as informações necessárias sobre o branch atual.</p>
+        <p><img src="images/gitstatus.png" alt="Imagem de comando do git status" class="cod"></p>
+
+        <p>Git Add:</p>
+        <p>Quando criamos, modificamos ou excluímos um arquivo, essas alterações ocorrerão em nosso ambiente local e não serão incluídas no próximo commit.Precisamos usar o comando git add para incluir as alterações de um arquivo em nosso próximo commit.</p>
+        <p>Para adicionar um arquivo e receber um commit:</p>
+        <p>.git add "arquivo"</p>
+        <p>Para adicionar tudo de uma vez:</p>
+        <p>Git add * ou git add .</p>
+        <p><img src="images/gitadd.png" alt="Imagem de comando do git add *" class="cod"></p>
+
+        <p>O comando git add não altera o repositório e as alterações não são salvas até usarmos o git commit.</p>
+        <p>Git Commit:</p>
+        <p>Este comando é como definir um ponto de verificação no processo de desenvolvimento, para o qual você pode voltar mais tarde, se necessário.</p>
+        <p><img src="images/gitcommit.png" alt="Imagem de comando do git commit" class="cod"></p>
+
+        <p>.git commit -m "mensagem explicando a mudança ou origem do código"</p>
+        <p>Caso sua pasta tenha muitos arquivos e você queira comentar todos, utilize o comando “git add *”, clique em enter e na linha seguinte utilize o comando *git commit -m "mensagem explicando a mudança ou origem do código", e pronto, todos os seus arquivos estão comentados.</p>
+        <p>Git Push</p>
+        <p>Após confirmar as alterações, a próxima coisa que você deseja fazer é enviar as alterações para o servidor remoto.</p>
+        <p>O comando git push abaixo envia e salva suas confirmações no repositório remoto:</p>
+        <p>.git push origin master</p>
+        <p><img src="images/gitpush.png" alt="Imagem de comando do git push" class="cod"></p>
+
+        <p>No entanto, se seu branch for criado recentemente, você também precisará fazer upload do branch com o seguinte comando:</p>
+        <p>.git push -u origin "nome-do-branch"</p>
+        <p>Git Pull</p>
+        <p>O comando git pull é usado para obter atualizações do repositório remoto. Usado para não haver divergências que podem acontecer caso uma pessoa já tenha subido uma versão modificada diferente de você, e por acaso os dois fizeram alterações no mesmo lugar, assim, executando este comando, o arquivo no repositório é atualizado para a sua máquina, assim você pode fazer as alterações necessárias para não ocorrer divergências proporcionado erros futuros.</p>
+        <p>O comando para utilizar o Git pull é:</p>
+        <p>.git pull origin master</p>
+        <p><img src="images/gitpull.png" alt="Imagem de comando do git pull" class="cod"></p>
+
+        <p>Este exemplo não está totalmente correto pois meus arquivos estão corretos tanto no meu pc quanto no arquivo remoto, porém caso o seu aconteça o mesmo este problema, as informações que aparecerem tem que ser quase idênticas as informações adquiridas com o git push. Feito todas as alterações nos arquivos, é só adicionar um novo commit e subir o arquivo no GitHub novamente.</p>
+        <p>O comando GitPull é uma combinação de git fetch e git merge, o que significa que, quando usamos o git pull, ele recebe as atualizações do repositório remoto git fetch e aplica imediatamente as alterações mais recentes no seu local git merge.</p>
+        <p>Git Revert</p>
+        <p>Existem várias maneiras de desfazer nossas alterações local ou remotamente (depende do que precisamos), mas devemos usar esses comandos com cuidado para evitar problemas.</p>
+        <p>Uma maneira segura de desfazer os commits é usando git revert.</p>
+        <p>git revert 'número do hash'</p>
+        <p><img src="images/gitrevert.png" alt="Imagem de comando do git revert" class="cod"></p>
+
+        <p>O número do hash pode ser conseguido pelo comando:</p>
+        <p>.git log -- oneline</p>
+        <p><img src="images/gitlog--oneline.png" alt="Imagem de comando do git log --oneline" class="cod"></p>
+
+        <p>
+            O código em hexadecimal (números e letras) é o numero Hash (SHA-1)
+        </p>
+        <p>Git Merge</p>
+        <p>Quando você conclui o desenvolvimento em sua branch e tudo funciona bem, a etapa final é mesclar as branches, isso é feito com o comando git merge, para o comando ser executado com êxito, o comando tem que ser executado apenas na Branch master (principal).</p>
+        <p>git merge "nome-da-branch"</p>
+        <p>siga meu raciocínio, você acabou sua branch, mas quando vai fazer a merge entre o arquivo remoto e o seu, pode acontecer o famoso conflito, que acontece quando outra pessoa editou o documento e enviou o arquivo antes de você, tornado o arquivo master diferente do que está em sua maquina, como no exemplo a seguir:</p>
+        <p><img src="images/gitmerge.png" alt="Imagem de comando do git merge com erro de diferença de arquivos" class="cod"></p>
+
+        <p>O conflito é exibido no arquivo como na área selecionada acima, com isso você escolhe se quer manter o que esta no master, substituir pela sua modificação, deixar as duas e até mesmo comparar, o visual code dá essa possibilidade automática, após isso, altere os arquivos do seu gosto, salve, adicione o commit e é só executar o git push.</p>
+        <p><img src="images/gitmergegithub.png" alt="Imagem de comando do git merge no git hub" class="cod"></p>
+
+        <p>Assim as informações serão encaminhadas e atualizadas no arquivo remoto.</p>
+
+
+    </article>
+
+
+    <footer>
+        <p><small>&copy; Copyright - Todos os direitos reservados - Grupo A</small></p>
+    </footer>
+
+</body></html>

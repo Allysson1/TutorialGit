@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+body {
+    font-family: "ariel", sans-serif;
+    width: 1700px;
+    margin: 0px auto 0px auto;
+    background-color: #febe00;
+}
+
+header {
+    background-color: #febe00;
+}
+
+
+
+h1 {
+    font-family: "Impact", sans-serif;
+    color: #363636;
+    text-indent: 610px;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 1;
+    margin-left: 90px;
+
+}
+
+
+h4 {
+    font-family: "ariel", sans-serif;
+    font-size: 20px;
+}
+
+p {font-family: "baskerville old face", serif;
+}
+
+.menu {
+    height: 100%;
+    width: 270px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #363636;
+    padding-top: 20px;
+}
+
+.menu a {
+    padding: 8px 10px 2px 25px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu2 {
+    padding: 0px 10px 0px 25px;
+    text-decoration: none;
+}
+
+.menu2 a {
+
+    font-size: 14px;
+    color: #818181;
+    display: block;
+}
+
+.menu2 a:hover {
+    color: #ffffff;
+}
+
+
+.corpo {
+    margin-left: 260px;
+    margin-right: -8px;
+    font-size: 19px;
+    font: #ffffff;
+    padding: 10px 50px;
+    background-color: #585858;
+    color: white;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.title {
+    font-family: 'arial', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500px;
+    margin: 0;
+    margin-top: 5px;
+
+}
+
+.linkweb {
+    color: dodgerblue;
+}
+
+footer {
+    position: absolute;
+
+}
+
+
+footer p {
+    color: #000000;
+    text-indent: 800px;
+}
+
+
+.cod {
+    margin-left: 150px;
+    clear:both;
+}
+
+.gci {
+    margin-left: 150px;
+    float: left;
+    
+}
+
+.inst {
+    margin-left: 370px;
+}
+
+.logo {
+    margin: 5px;
+    margin-left: 300px;
+}
+
+.link: hover {
+    color: #ffffff;
+}
+.menu li{
+    list-style: none;
+    margin-left: 5px;
+    
+}
+.gb{
+    clear:both;
+    
+}
+
+
+.tlf{
+    width: 800px;
+    float:left;
+    margin-left: 20px;
+}
+.inst2 {
+    margin-left: 250px;
+}

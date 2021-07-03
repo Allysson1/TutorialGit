@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial de Git</title>
+    <link rel="stylesheet" href="css/estilo.css" type="text/css" />
+</head>
+
+<body>
+
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+
+        <ul class="menu2">
+            <li><a href="index.html#control">O que é controle de versão</a></li>
+            <li><a href="index.html#git">O que é o Git</a></li>
+            <li><a href="index.html#github">O que é GitHub</a></li>
+            <li><a href="index.html#gitlab">O que é GitLab</a></li>
+            <li><a href="index.html#pull">O que é Git Pull</a></li>
+            <li>  <a href="index.html#brach">O que são Branches</a></li>
+            <li> <a href="index.html#explic">Como criar uma conta em um dos serviços</a></li>
+            <li><a href="index.html#facul">Colaborar em um projeto usando o Git</a></li>
+        </ul>
+        <a href="tutorial.html">Tutorial De Uso</a>
+        <a href="instala.html">Instalação e Configuração</a>
+
+        <ul class="menu2">
+            <li><a href="instala.html">Instalação no Windows</a></li>
+            
+            <!--<a href="instala.html">No Linux </a>-->
+            <li><a href="instala.html#config">Configuração do Git</a></li>         
+        </ul>
+        <a href="comandos.html">Principais comandos do Git</a>
+        <a href="arrumar.html">Como arrumar uma mensagem errada no commit</a>
+        <a href="referencias.html">Todas as referências usadas para desenvolver o tutorial</a>
+
+    </nav>>
+
+    <article class="corpo">
+
+
+        <h2 class="title">Tutorial De Uso</h2>
+        <p>
+            1. Link para criar conta no github, para ter acesso aos repositórios, a tela que sera aberta ao clicar no link é a imgem a seguir:
+        </p>
+        <p>
+            <a class="linkweb" href="https://github.com/join?source=login">Link para criação de conta no GitHub.</a>
+        </p>
+
+        <p>
+        <p><img src="images/githubtut1.png" alt="interface de criação de conta do GitHub." class="inst">
+        <p>Após criar sua conta, crie um repositório no github. </p>
+        <p><img src="images/githubtut2.png" alt="Interface de criação de repositório do GitHub." class="inst2"></p>
+
+        <p>Você em seguida virá para essa tela. Será gerado um link de seu repositório aqui.</p>
+        <p>
+        <p><img src="images/githubtut3.png" alt="Página que mostra seu repositório criado no  GitHub" class="inst2"></p>
+
+
+        <p>
+            2. Após isso, navegue pelo Cmd usando cd ../ para ir fazendo o caminho até a pasta que deseja criar o repositório, como no exemplo a seguir:
+        <p><img src="images/gitinitcriandorep%C3%B3sitoriocmd.png" alt="Imagem mostrando o processo de criação de um repositório pelo Cmd do Windows" class="cod"></p>
+        Com isso, usando o comando git init no caminho escolhido, automaticamente um arquivo oculto .GIT aparecerá na pasta selecionada. O trabalho pelo CMD acaba aqui. Para ver se está tudo certo, utilize o comando “git status” sem as aspas na linha de comando. (“Ain, mas por que criar outro diretório aqui se eu já criei no GitHub?” Meu caro/a, Confia).
+
+        <p>
+            3. Agora vamos para o editor de texto escolhido, nesse caso iremos ver o Visual Studio Code, mas se você usa outro, em teoria os comandos não mudam.
+        </p>
+        <p>
+            Abra a pasta (Open folder) em que você criou o repositório:
+        <p><img src="images/vscode.png" alt="imagem representado a pasta aberta no editor de texto Visual Code." class="inst"></p>
+
+        <p>
+            A maior vantagem do visual code é que aparece em sua barra de navegação uma pasta que mostra todas as mudanças do repositório em tempo real, conforme o ícone selecionado ao lado esquerdo da imagem abaixo. O ícone verde U, significa Untracked, ou seja, não está salvo no github. O processo para salvar o arquivo no GitHub é o que eu vou mostrar a seguir:
+        <p><img src="images/gitremoteorigin.png" alt="logo do git" class="cod"></p>
+
+        <p>
+            Execute o comando: git remote add origin https:// “seu link gerado no github”
+        </p>
+        <p>
+            No meu caso deu erro pois eu já tenho os sistemas ligados. (error: remote origin already exists.) Entendeu agora o por que de criar diretórios tanto no GitHub quanto pelo CMD no computador? Continuando..
+        </p>
+        <p>
+            Em seguida com tudo o que desejava realizar pronto, adicione commits a todos os arquivos (método explicado no decorrer deste documento), pois se não fizer isso não conseguirá subir os arquivos no github
+        </p>
+        <p>
+            Após isso, utilize o comando “git push origin master” para enviar todos os seus arquivos para o diretório remoto do GitHub.
+        <p><img src="images/gitoriginmaster.png" alt="imagem retratando o comando git push e mostrando  o seu retorno." class="cod"></p>
+
+        <p>
+            Quando você executar este comando, irá aparecer uma mensagem do GitHub solicitando seu user name cadastrado, insira seu user name e logo após aparecera uma informação semelhante ao da imagem acima.
+        <p><img src="images/arquivosgithub.png" alt="imagem ilustrando um diretório com arquivos recém enviados." class="cod"></p>
+
+        <p>
+            Quando acessar sua conta no GitHub, você verá algo semelhante a isso. Clicando no item parecido com um relógio na imagem, você irá para a tela de versões como relatado abaixo:
+        <p><img src="images/versaogithub.png" alt="imagem mostrando como é a visualização do arquivo com o código de versão Hexadecimal." class="cod"></p>
+
+        <p>
+            O número Hexadécimal (numeros e letras) é a versão dos diretórios, criada com base em SHA-1, sistema feito para dar uma quantidade de 40 caracteres para identificação única para o arquivo. Também é responsável pela criptografia do arquivo com sistema Hexadecimal.
+        </p>
+
+        <p>
+            Pronto, com esses comandos básicos que aprendeu até aqui, você consegue utilizar muitas utilidades do commit sem dificuldades
+        </p>
+        <p>
+            ATENÇÃO: Todas as imagens são de autoria própria e meramente ilustrativas, se o seu não estiver parecido, não significa que esteja errado.
+        </p>
+
+
+    </article>
+
+
+    <footer>
+        <p><small>&copy; Copyright - Todos os direitos reservados - Grupo A</small></p>
+    </footer>
+
+</body>
+
+</html>
