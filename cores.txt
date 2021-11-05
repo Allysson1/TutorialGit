@@ -1,5 +1,0 @@
-cores : #000000 preto
-#49524B cinza escuro
-#FECBoo amarelo
-#FFD673 amarelo bege
-#ffffff
