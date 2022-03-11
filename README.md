@@ -14,7 +14,7 @@ Este site não é responsivo.
   
 caso queira ver o projeto completo:
   
-você precisa ter um navegador com suporte ao HTML5 e o 
+você precisa ter um navegador com suporte ao HTML5 e CSS3
   
   
 # English version:
